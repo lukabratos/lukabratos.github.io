@@ -22,7 +22,7 @@ Final step is one click away. It will generate and download a `Podfile` with you
 ![]({{ site.url }}{{ site.baseurl }}/images/2014-6-5-Mockup.png)
 {: refdef}
 
-Because I like nice and simple products, I asked a friend of mine if he could help me with design and logo.
+Because I like nice and simple products, I asked [Primoz](https://twitter.com/primozskerget) if he could help me with design and logo.
 
 **He did the magic.**
 
