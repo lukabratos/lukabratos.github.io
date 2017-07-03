@@ -78,5 +78,5 @@ You can decouple these by implementing `debugDescription` on your own.
 End result:
 --------------------
 {:refdef: style="text-align: center;"}
-![]({{ site.url }}{{ site.baseurl }}/images/2014-03-25-Po.png)
+![Debug Console]({{ site.url }}{{ site.baseurl }}/images/2014-03-25-Po.png)
 {: refdef}

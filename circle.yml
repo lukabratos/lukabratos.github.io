@@ -1,0 +1,14 @@
+machine:
+  environment:
+    NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+
+dependencies:
+  pre:
+    - gem install bundler
+    - bundle install
+  post:
+    - bundle exec jekyll build
+
+test:
+  post:
+    - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
