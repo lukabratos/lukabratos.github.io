@@ -71,7 +71,7 @@ Place the following code to the ```UIButton``` action method so you can see if v
 After playing around a little bit on the iPhone simulator we can see that the conversion rate is higher for the button with the title **Hello**. However to get accurate results, the number of users needs to be bigger than 100 per variation.
 
 {:refdef: style="text-align: center;"}
-![]({{ site.url }}{{ site.baseurl }}/images/2014-01-14-ExperimentResult.jpg)
+![Experiment]({{ site.url }}{{ site.baseurl }}/images/2014-01-14-ExperimentResult.jpg)
 {: refdef}
 
 Conversion rate and change over baseline
@@ -80,7 +80,7 @@ Conversion rate and change over baseline
 For each variation conversion rate is calculated as:
 
 {:refdef: style="text-align: center;"}
-![](https://latex.codecogs.com/gif.latex?p&space;=&space;\frac{x}{n})
+![Conversion Rate](https://latex.codecogs.com/gif.latex?p&space;=&space;\frac{x}{n})
 {: refdef}
 
 Where **x** is number of conversions and **n** is number of people that have viewed variation.
@@ -88,7 +88,7 @@ Where **x** is number of conversions and **n** is number of people that have vie
 Formula for calculating change over baseline is basically substraction of conversion **B** and **A** divided by conversion value of **A**.
 
 {:refdef: style="text-align: center;"}
-![](https://latex.codecogs.com/gif.latex?c&space;=&space;\frac{p_{b}-p_{a}}{p_{a}})
+![Change Over Baseline](https://latex.codecogs.com/gif.latex?c&space;=&space;\frac{p_{b}-p_{a}}{p_{a}})
 {: refdef}
 
 Update

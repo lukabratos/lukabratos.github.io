@@ -19,7 +19,7 @@ I wanted a pretty simple workflow: search for libraries that you need to start w
 Final step is one click away. It will generate and download a `Podfile` with your pods so you just need to `pod install` them!
 
 {:refdef: style="text-align: center;"}
-![]({{ site.url }}{{ site.baseurl }}/images/2014-6-5-Mockup.png)
+![Mockup]({{ site.url }}{{ site.baseurl }}/images/2014-6-5-Mockup.png)
 {: refdef}
 
 Because I like nice and simple products, I asked [Primoz](https://twitter.com/primozskerget) if he could help me with design and logo.
@@ -27,13 +27,13 @@ Because I like nice and simple products, I asked [Primoz](https://twitter.com/pr
 **He did the magic.**
 
 {:refdef: style="text-align: center;"}
-![]({{ site.url }}{{ site.baseurl }}/images/2014-6-5-Logo1.png)
+![Cocoa Brewer Logo]({{ site.url }}{{ site.baseurl }}/images/2014-6-5-Logo1.png)
 {: refdef}
 
 Cocoa Brewer
 ====================
 {:refdef: style="text-align: center;"}
-![]({{ site.url }}{{ site.baseurl }}/images/2014-6-5-CocoaBrewer.gif)
+![Cocoa Brewer]({{ site.url }}{{ site.baseurl }}/images/2014-6-5-CocoaBrewer.gif)
 {: refdef}
 
 Before you go...

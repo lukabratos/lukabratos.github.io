@@ -9,7 +9,7 @@ This blog post is just a short overview of the tools that I am using when workin
 To enable launch arguments for your app select your target from the Xcode toolbar and select `Edit Scheme`. 
 You'll see this menu:
 {:refdef: style="text-align: center;"}
-![]({{ site.url }}{{ site.baseurl }}/images/2014-8-24-EditScheme.png)
+![Edit Scheme]({{ site.url }}{{ site.baseurl }}/images/2014-8-24-EditScheme.png)
 {: refdef}
 Any argument passed on launch will override the current value in `NSUserDefaults` for the duration of execution.[^1]
 Here are some options if you're using SQLite as your persistent store:
