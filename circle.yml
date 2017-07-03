@@ -3,6 +3,8 @@ machine:
     NOKOGIRI_USE_SYSTEM_LIBRARIES: true
 
 dependencies:
+  pre:
+    - gem install bundler
   post:
     - bundle exec jekyll build
 
