@@ -19,6 +19,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 github_username: lukabratos
+twitter_username: lukabratos
+
 
 # Google Services
 google_analytics: UA-41745953-1
