@@ -9,28 +9,32 @@ It is often called split-testing because sample of users is usually split in two
 Variants **A** (baseline) and **B** are compared which differ one from another in small aspect that might impact user's behaviour.
 Point of A/B testing is finding the predominant version that will result in higher [conversion rates](http://en.wikipedia.org/wiki/Conversion_marketing).
 
-Say hello to Bestly
-====================
+## Say hello to Bestly
+
 [Bestly](http://best.ly) offers an easy way to add A/B testing and staged rollouts to native mobile applications.
 
 The easiest way to add Bestly into your iOS project is using [CocoaPods](http://cocoapods.org).
 Simply create new **Podfile** or add to existing one ```pod 'Bestly'``` and run ```pod install``` in your terminal.
 
 Then you need to add the following import to your ```.pch``` or ```AppDelegate.m```
-{% highlight objc %}
-#import <Bestly/Bestly.h>
-{% endhighlight %}
-Sign into [Bestly](http://best.ly) and create a new app. Paste the following line to your ```application:didFinishLaunchingWithOptions:``` and replace ```APP_KEY``` with key that was generated on the website.
-{% highlight objc %}
-[Bestly setupWithKey:@"APP_KEY"];
-{% endhighlight %}
 
-Creating your first controlled experiment
-====================
+```objc
+#import <Bestly/Bestly.h>
+```
+
+Sign into [Bestly](http://best.ly) and create a new app. Paste the following line to your ```application:didFinishLaunchingWithOptions:``` and replace ```APP_KEY``` with key that was generated on the website.
+
+```objc
+[Bestly setupWithKey:@"APP_KEY"];
+```
+
+## Creating your first controlled experiment
+
 You can run experiment with **two** *A, B* or **three** *A, B, C* variants.
 
 In this example I will show you the basic usage with two variants.
-{% highlight objc %}
+
+```objc
 /**
  * Call this whenever you'd like to run an experiment.
  * @param experimentID The experiment ID corresposding to the
@@ -44,29 +48,31 @@ In this example I will show you the basic usage with two variants.
 + (void)runExperimentWithID:(NSString *)experimentID
                           A:(void(^)(void))a
                           B:(void(^)(void))b;
-{% endhighlight %}
+```
 
 Let's say that we want to A/B test a button with different title. We've got two variants:
 
-- **A**: Hi!
-- **B**: Hello!
+* **A**: Hi!
+* **B**: Hello!
 
 Paste this code and replace ```EXPERIMENT_ID``` with *Experiment ID* that you can find on the website.
-{% highlight objc %}
+
+```objc
 [Bestly runExperimentWithID:@"EXPERIMENT_ID" A:^{
     // Insert your testing logic here...
     [self.testButton setTitle:@"Hi!" forState:UIControlStateNormal];
 } B:^{
     [self.testButton setTitle:@"Hello!" forState:UIControlStateNormal];
 }];
-{% endhighlight %}
+```
 
 Place the following code to the ```UIButton``` action method so you can see if variation's goal was reached.
-{% highlight objc %}
+
+```objc
 - (IBAction)testButtonTapped:(id)sender {
     [Bestly goalReachedForExperimentID:@"EXPERIMENT_ID"];
 }
-{% endhighlight %}
+```
 
 After playing around a little bit on the iPhone simulator we can see that the conversion rate is higher for the button with the title **Hello**. However to get accurate results, the number of users needs to be bigger than 100 per variation.
 
@@ -74,8 +80,7 @@ After playing around a little bit on the iPhone simulator we can see that the co
 ![Experiment]({{ site.url }}{{ site.baseurl }}/images/2014-01-14-ExperimentResult.jpg)
 {: refdef}
 
-Conversion rate and change over baseline
-====================
+## Conversion rate and change over baseline
 
 For each variation conversion rate is calculated as:
 
@@ -91,14 +96,14 @@ Formula for calculating change over baseline is basically substraction of conver
 ![Change Over Baseline](https://latex.codecogs.com/gif.latex?c&space;=&space;\frac{p_{b}-p_{a}}{p_{a}})
 {: refdef}
 
-Update
-====================
+## Update
+
 The response for this blog post was immense. I was lucky enough to get on the the front page of [Hacker News](https://news.ycombinator.com/item?id=7063595) resulting in almost 3000+ visitors from 70+ countries in one day—not too bad.
 
 I also received a very special email. It was from James, the founder of Bestly. He thanked me for writing the post and informed me that a new version of Bestly is coming out.
 
-What changed?
----------------------
+## What changed
+
 1. There's a new version of Bestly SDK on [GitHub](https://github.com/bestly/bestly-ios)
 2. You don't need to use ```[Bestly goalReachedForExperimentID:@""];``` anymore[^1].
 3. Design changes on the dashboard
