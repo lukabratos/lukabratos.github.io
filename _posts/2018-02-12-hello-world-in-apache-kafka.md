@@ -7,7 +7,7 @@ In this blog post, we will install Apache Kafka, create a topic, and send a few 
 
 > [Kafka®](https://kafka.apache.org/) is used for building real-time data pipelines and streaming apps. It is horizontally scalable, fault-tolerant, wicked fast, and runs in production in thousands of companies.
 
-# 1. Install Kafka
+## 1. Install Kafka
 
 The easiest way to install Apache Kafka on macOS is by using [Homebrew](https://brew.sh/).
 
@@ -15,7 +15,7 @@ The easiest way to install Apache Kafka on macOS is by using [Homebrew](https://
 brew install kafka
 ```
 
-# 2. Start the Zookeper and Kafka server
+## 2. Start the Zookeper and Kafka server
 
 ```bash
 zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties & kafka-server-start /usr/local/etc/kafka/server.properties
@@ -23,7 +23,7 @@ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties & kafka-server-
 
 > [Zookeeper](https://cwiki.apache.org/confluence/display/ZOOKEEPER/Index) is used to manage brokers in the Kafka cluster.
 
-# 3. Create a topic
+## 3. Create a topic
 
 Kafka is architectured as distributed transaction log. This means that we can break down the data of each topic into multiple partitions which can be running on one or more servers all managed by the Kafka Cluster.
 In this case, we're using one partition: `--partitions 1`.
@@ -42,11 +42,11 @@ We should see this message: `Created topic "hello-world".` If you've created man
 kafka-topics --list --zookeeper localhost:2181
 ```
 
-# 4. Sending Messages
+## 4.  Sending Messages
 
 At its most basic principle, we use **Producers** to publish messages to the specific topics in the Kafka Cluster, and **Consumers** to subscribe to the specific topics and retrieve the messages.
 
-## Producer
+### Producer
 
 We can have an arbitrary number of processes called **producers**. When we execute the following command, we will start command line client that will be listening for any input. In my example, I'll be sending messages *a*, *b*, *c*, *d*, *e*, and *f* to the topic *hello-world*.
 
@@ -56,7 +56,7 @@ kafka-console-producer --broker-list localhost:9092 --topic hello-world
 
 [![asciicast](https://asciinema.org/a/162493.png)](https://asciinema.org/a/162493)
 
-## Consumer
+### Consumer
 
 Consumers role is to query the messages. We have published 6 messages so far to the topic *helo-world*. Let's see them:
 
