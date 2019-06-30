@@ -157,4 +157,4 @@ Finally, we have saved the data into the file so it can be retrieved and deseria
 
 I hope that you’ve enjoyed reading this post. For any further questions or feedback please don’t hesitate to contact me on [Twitter](https://twitter.com/lukabratos).
 
-You can download the Swift Playgrounds file [here](/download/Enums.playground.zip).
+You can download the Swift Playgrounds file [here]({{ site.url }}{{ site.baseurl }}/download/Enums.playground.zip).
