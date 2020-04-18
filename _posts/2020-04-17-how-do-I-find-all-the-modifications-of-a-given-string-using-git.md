@@ -33,5 +33,5 @@ As my friend [@zmarkan](https://twitter.com/zmarkan) says, your [tools do someti
 How do you search through your git history? Do you have any tricks to share? 
 [Let me know](https://twitter.com/lukabratos)!
 
-[^1]: [S](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt--Sltregexgt)
-[^2]: [G](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt--Gltregexgt)
+[^1]: [-S\<string\>](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt--Sltstringgt)
+[^2]: [-G\<regex\>](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt--Gltregexgt)
