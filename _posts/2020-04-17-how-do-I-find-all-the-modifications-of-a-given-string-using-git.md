@@ -22,7 +22,7 @@ Let’s say you’re looking for a flag `isPizzaDelivered`, you need to pass it 
 
 You might be familiar with `git log` which will return list of all the commits, but this uses the `-S` flag which does all the heavy lifting. That’s your pickaxe that lets you dig through the commits.
 
-Since git version 1.7.4 you can also use the flag `-G`[^2] which lets you regular expressions.
+Since git version [1.7.4](https://github.com/git/git/blob/master/Documentation/RelNotes/1.7.4.txt#L76) you can also use the flag `-G`[^2] which lets you regular expressions.
 
 As a result you will receive a list of commits which include changes to the string that you’ve specified and that’s really useful to learn more about the context and lifecycle in which the variable was being used.
 
