@@ -31,7 +31,7 @@ As a result you will receive a list of commits which include changes to the stri
 As my friend [@zmarkan](https://twitter.com/zmarkan) says, your [tools do sometimes indeed give you superpowers](https://skillsmatter.com/skillscasts/10698-one-to-10x-tools-that-give-you-superpowers).
 
 How do you search through your git history? Do you have any tricks to share? 
-Let me know!
+[Let me know](https://twitter.com/lukabratos)!
 
 [^1]: [S](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt--Sltregexgt)
 [^2]: [G](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt--Gltregexgt)
