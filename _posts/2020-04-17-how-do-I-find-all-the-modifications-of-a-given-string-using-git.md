@@ -16,7 +16,7 @@ Luckily, there is a way to see the entire lifecycle of a variable changing throu
 
 I didn’t know about this until today, but looking at git’s documentation, I found this gem of a command, that lets you find all the commits contaning a modification of a given string:
 
-`git log -SisPizzaDelivered --oneline`
+`git log -S isPizzaDelivered --oneline`
 
 Let’s say you’re looking for a flag `isPizzaDelivered`, you need to pass it as a `-S`[^1] argument.
 
