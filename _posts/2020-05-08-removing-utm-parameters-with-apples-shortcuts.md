@@ -56,8 +56,6 @@ You can download the shortcut [here](https://www.icloud.com/shortcuts/97544ab172
 
 Do you use Shortcuts app? Which shortcuts are your favourite ones? Do you know any other tricks? Let me know on [Twitter](https://twitter.com/lukabratos/status/1258819152095195141)!
 
-Found a typo? Feel free to [edit](https://github.com/lukabratos/lukabratos.github.io/edit/master/_posts/2020-05-08-removing-utm-parameters-with-apples-shortcuts.md) this blog post.
-
 [^1]: [Wikipedia](https://en.wikipedia.org/wiki/UTM_parameters)
 [^2]: [Shortcuts](https://apps.apple.com/us/app/shortcuts/id915249334)
 [^3]: [Workflow](http://workflow.is/)
