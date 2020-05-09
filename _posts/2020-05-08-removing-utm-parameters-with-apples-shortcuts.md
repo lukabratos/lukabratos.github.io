@@ -2,6 +2,7 @@
 layout: post
 title: "Removing UTM parameters with Apple's Shortcuts"
 date: 2020-05-08 14:40:00 +0000
+excerpt: "Using iOS Shortcuts app to remove UTM parameters from the URLs"
 ---
 
 Here's the thing. You're browsing on the internet and find an interesting website that you want to share with a friend.
