@@ -26,12 +26,23 @@ Since the URL polluted with UTM parameters looks like this:
 
 https://www.example.com/page?<mark>utm_content=buffercf3b2&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer</mark>
 
-I came up with a naive solution in JavaScript that would drop all the query parameters from the URL:
+I came up with a solution in JavaScript that would remove all the query parameters associated with the UTM from the URL:
 
 ```javascript
-const url = window.location.href;
-const result = url.split('?')[0];
-completion(result);
+const params = new URLSearchParams(location.search)
+const utm_params = ['utm_content', 'utm_medium', 'utm_source', 'utm_campaign', 'utm_term']
+
+utm_params.forEach(item => {
+	if (params.has(item) === true) {
+		params.delete(item)
+	}
+});
+
+if (Array.from(params).length === 0) {
+	completion(`${location.origin}${location.pathname}`)
+} else {
+	completion(`${location.origin}${location.pathname}?${params}`)
+}
 ```
 
 Complete shortcut:
@@ -53,7 +64,7 @@ Usage workflow is following:
 3. Tap on **Remove UTM** button
 4. Copy or share the sanitised URL
 
-You can download the shortcut [here](https://www.icloud.com/shortcuts/97544ab172b54c9bb2619c5dd19c8b3f). As a prerequisite you need to enable setting for [Untrusted Shortcuts](https://support.apple.com/en-hk/HT210628).
+You can download the shortcut [here](https://www.icloud.com/shortcuts/bbc6a213d8804e5d87b7f89674940f7f). As a prerequisite you need to enable setting for [Untrusted Shortcuts](https://support.apple.com/en-hk/HT210628).
 
 Do you use Shortcuts app? Which shortcuts are your favourite ones? Do you know any other tricks? Let me know on [Twitter](https://twitter.com/lukabratos/status/1258819152095195141)!
 
