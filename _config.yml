@@ -24,9 +24,6 @@ github_username: lukabratos
 twitter_username: lukabratos
 linkedin_username: lukabratos
 
-# Google Services
-google_analytics: UA-41745953-1
-
 # Build settings
 markdown: kramdown
 theme: minima
