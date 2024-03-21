@@ -5,7 +5,7 @@ jobs:
       - image: circleci/ruby:2.6.1
     steps:
       - checkout
-      - run: gem install bundler
+      - run: gem install bundler -v 2.4.22
       - run: bundle install
       - run: bundle exec jekyll build
 
