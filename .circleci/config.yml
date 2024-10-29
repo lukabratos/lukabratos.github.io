@@ -5,6 +5,7 @@ jobs:
       - image: cimg/ruby:2.6.1
     steps:
       - checkout
+      - run: gem update --system 3.2.3
       - run: gem install bundler -v 2.4.22
       - run: bundle install
       - run: bundle exec jekyll build
@@ -14,4 +15,5 @@ jobs:
         - image: cimg/ruby:2.6.1
       steps:
         - checkout
+        - run: gem update --system 3.2.3
         - run: bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
